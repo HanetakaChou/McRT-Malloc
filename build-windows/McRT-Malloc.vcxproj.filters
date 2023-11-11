@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{8cabd53b-5e06-4332-8f64-850f61370440}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{7ce314ed-a90c-45fd-915e-533d046e914e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build-windows">
+      <UniqueIdentifier>{e0eecefd-7288-4be3-a068-a367c8ed217c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\mcrt_malloc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\mcrt_malloc.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>build-windows</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="McRT-Malloc.def">
+      <Filter>build-windows</Filter>
+    </None>
+  </ItemGroup>
+</Project>
