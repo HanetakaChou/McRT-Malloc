@@ -1,0 +1,4 @@
+[submodule "thirdparty/Intel-TBB"]
+	path = thirdparty/Intel-TBB
+	url = git@github.com:HanetakaChou/Intel-TBB.git
+	branch = master
