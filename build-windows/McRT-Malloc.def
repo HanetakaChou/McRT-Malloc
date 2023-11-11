@@ -1,0 +1,15 @@
+EXPORTS
+	mcrt_malloc
+	mcrt_free
+	mcrt_realloc
+	mcrt_max_concurrency
+	mcrt_current_thread_index
+	mcrt_parallel_map
+	mcrt_parallel_reduce_float
+	mcrt_parallel_reduce_double
+	mcrt_parallel_reduce_double2
+	mcrt_parallel_reduce_double4
+	mcrt_parallel_reduce_double36
+	mcrt_parallel_reduce_int
+	mcrt_tick_count_per_second
+	mcrt_tick_count_now
