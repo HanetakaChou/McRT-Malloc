@@ -1,0 +1,7 @@
+EXPORTS
+	mcrt_malloc
+	mcrt_free
+	mcrt_max_concurrency
+	mcrt_current_thread_index
+	mcrt_parallel_map
+	mcrt_parallel_reduce
