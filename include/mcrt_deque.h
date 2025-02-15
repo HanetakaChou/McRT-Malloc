@@ -15,13 +15,13 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-#ifndef _MCRT_UNORDERED_SET_H_
-#define _MCRT_UNORDERED_SET_H_ 1
+#ifndef _MCRT_DEQUE_H_
+#define _MCRT_DEQUE_H_ 1
 
-#include <unordered_set>
+#include <deque>
 #include "mcrt_allocator.h"
 
-template <typename Key>
-using mcrt_unordered_set = std::unordered_set<Key, std::hash<Key>, std::equal_to<Key>, mcrt_allocator<Key>>;
+template <typename T>
+using mcrt_deque = std::deque<T, mcrt_allocator<T>>;
 
 #endif

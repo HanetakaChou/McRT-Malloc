@@ -21,15 +21,15 @@
 
 // TODO: implement McRT-Malloc
 
-extern void *mcrt_malloc(size_t raw_size, size_t alignment)
+extern void *mcrt_malloc(size_t size, size_t alignment)
 {
 	// [alignUp](https://github.com/oneapi-src/oneTBB/blob/tbb_2019/src/tbbmalloc/shared_utils.h#L42)
-	size_t const size = ((((static_cast<size_t>(sizeof(float)) * raw_size) - static_cast<size_t>(1U)) | (alignment - static_cast<size_t>(1U))) + static_cast<size_t>(1U));
+	size_t const internal_size = (((static_cast<size_t>(size) - static_cast<size_t>(1U)) | (alignment - static_cast<size_t>(1U))) + static_cast<size_t>(1U));
 
 #if defined(__GNUC__)
-	return aligned_alloc(alignment, size);
+	return aligned_alloc(alignment, internal_size);
 #elif defined(_MSC_VER)
-	return _aligned_malloc(size, alignment);
+	return _aligned_malloc(internal_size, alignment);
 #else
 #error Unknown Compiler
 #endif

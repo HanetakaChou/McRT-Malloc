@@ -23,7 +23,14 @@
     <ClCompile Include="dllmain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\include\mcrt_allocator.h" />
+    <ClInclude Include="..\include\mcrt_deque.h" />
     <ClInclude Include="..\include\mcrt_malloc.h" />
+    <ClInclude Include="..\include\mcrt_map.h" />
+    <ClInclude Include="..\include\mcrt_string.h" />
+    <ClInclude Include="..\include\mcrt_unordered_map.h" />
+    <ClInclude Include="..\include\mcrt_unordered_set.h" />
+    <ClInclude Include="..\include\mcrt_vector.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="McRT-Malloc.def" />

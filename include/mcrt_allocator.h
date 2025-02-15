@@ -48,7 +48,7 @@ public:
 
     inline T *allocate(std::size_t n)
     {
-        return static_cast<T *>(mcrt_malloc(n * sizeof(value_type), alignof(value_type)));
+        return static_cast<T *>(mcrt_malloc(n * sizeof(value_type), ((alignof(value_type) > std::size_t(16)) ? alignof(value_type) : std::size_t(16))));
     }
 
     inline void deallocate(T *p, std::size_t)

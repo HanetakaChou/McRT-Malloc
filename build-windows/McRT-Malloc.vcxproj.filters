@@ -15,6 +15,27 @@
     <ClInclude Include="..\include\mcrt_malloc.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\mcrt_map.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mcrt_string.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mcrt_unordered_map.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mcrt_unordered_set.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mcrt_vector.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mcrt_allocator.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mcrt_deque.h">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\source\mcrt_malloc.cpp">
